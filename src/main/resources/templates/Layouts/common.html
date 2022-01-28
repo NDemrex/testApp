@@ -1,0 +1,39 @@
+<!-- Common Header Fragment -->
+<!DOCTYPE html>
+<html
+  xmlns:th="http://www.thymeleaf.org/"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+>
+<div class="header-section" th:fragment="header"> 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">CST-339 Application</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" th:href="@{/orders/all}">All</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/orders/searchForm}">Search</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/orders/addNewForm}">Add</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/orders/admin}">Admin</a>
+
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>
+
+
+
+<!-- call the common header -->
+<div class="footer-section" th:fragment="footer">
+<h5>Footer section</h5>
+</div>
+</html>
