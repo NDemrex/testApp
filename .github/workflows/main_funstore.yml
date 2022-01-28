@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'funstore'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4A92070B61694F89AC267359502D17C8 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CAE990F9E4F84EE8AF63C437A0D1AACD }}
           package: '*.war'
